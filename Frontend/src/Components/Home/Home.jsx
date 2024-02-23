@@ -1,4 +1,7 @@
+import Lottie from 'lottie-react'
 import { useEffect } from 'react';
+
+import animation from "../../assets/Lottie JSON/Animation - 1708716005607.json"
 
 function Home() {
   useEffect(() => {
@@ -13,7 +16,19 @@ function Home() {
 
   return (
     <div className="bg-[#1D232A] h-screen">
-      {/* Content of your Home component */}
+      <div>
+        <div>
+
+        </div>
+        <div>
+        <Lottie 
+           animationData={animation}
+           loop={true}
+           autoplay={true}
+           className='h-[500px]  col-start-1'
+           />
+        </div>
+      </div>
     </div>
   );
 }

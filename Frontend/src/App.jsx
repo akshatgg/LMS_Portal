@@ -9,7 +9,7 @@ function App() {
     
         <Routes>
           <Route path="" element={<OutletP />} >
-          <Route path="/Home" element={<Home/>}/>
+          <Route path="" element={<Home/>}/>
           {/* <Route path="*" element={<Navigate to="/Home" />} /> */}
           </Route>
         </Routes>

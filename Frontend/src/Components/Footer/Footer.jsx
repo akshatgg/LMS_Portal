@@ -1,23 +1,27 @@
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa6";
+import { FaGithubAlt } from "react-icons/fa6";
 import { FiTwitter } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-[#1F2937] text-white fixed mx-auto right-0 bottom-0 left-0 w-full max-w-[1440px] h-20">
+    <footer className="bg-[#1F2937] text-white fixed mx-auto right-0 bottom-0 left-0 w-full max-w-[1440px] h-24">
       <div className="flex justify-around items-center h-full px-4">
         <div>Copyright 2024 | All rights reserved</div>
 
         <div className="flex mr-10">
-          <div className="ml-4 text-2xl hover:text-[#EAB308]">
+          <div className="ml-4 text-3xl hover:text-[#EAB308]">
             <FaFacebook />
           </div>
-          <div className="ml-4 text-2xl hover:text-[#EAB308]">
+          <div className="ml-4 text-3xl hover:text-[#EAB308]">
             <BsInstagram />
           </div>
-          <div className="ml-4 text-2xl hover:text-[#EAB308]">
+          <div className="ml-4 text-3xl hover:text-[#EAB308]">
             <FiTwitter />
+          </div>
+          <div className="ml-4 text-3xl hover:text-[#EAB308]">
+            <FaGithubAlt />
           </div>
         </div>
 

@@ -1,18 +1,28 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 
 import Home from "./Components/Home/Home";
 import OutletP from "./Outlet/OutletP";
 
 function App() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Redirect to "/Home" route when the component mounts
+    navigate("/Home");
+  }, [navigate]);
+
   return (
     <>
-    
+      
         <Routes>
           <Route path="" element={<OutletP />} >
-          <Route path="" element={<Home/>}/>
-          {/* <Route path="*" element={<Navigate to="/Home" />} /> */}
+            <Route path="/Home" element={<Home/>}/>
+
+            
           </Route>
         </Routes>
+      
     </>
   );
 }

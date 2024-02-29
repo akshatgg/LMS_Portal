@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      
+      {/* <Router> */}
         <Routes>
           <Route path="" element={<OutletP />} >
             <Route path="/Home" element={<Home/>}/>
@@ -22,7 +22,7 @@ function App() {
             
           </Route>
         </Routes>
-      
+        {/* </Router> */}
     </>
   );
 }
